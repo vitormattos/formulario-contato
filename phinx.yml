@@ -1,0 +1,6 @@
+paths:
+    migrations: ./db
+environments:
+    development:
+        adapter: sqlite
+        name: ./contatos
