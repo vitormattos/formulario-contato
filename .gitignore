@@ -2,3 +2,5 @@ vendor
 
 .project
 .settings
+
+*.sqlite3

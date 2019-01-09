@@ -32,6 +32,9 @@ class Contatos extends AbstractMigration
      */
     public function change()
     {
-
+        $this->table('contato')
+            ->addColumn('nome', 'string')
+            ->addColumn('mensagem', 'text')
+            ->create();
     }
 }

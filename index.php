@@ -8,4 +8,11 @@
 <?php
 if($_POST) {
     var_dump($_POST);
+    $pdo = new PDO('sqlite:contatos.sqlite3');
+    $sth = $pdo->prepare(
+        'INSERT INTO contato ' .
+        '(nome, mensagem) '.
+        'VALUES (?, ?)'
+    );
+    $sth->execute([$_POST['nome'], $_POST['mensagem']]);
 }
