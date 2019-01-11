@@ -25,7 +25,8 @@ $sth->execute();
     <tr>
       <th>Nome</th>
       <th>Telefone</th>
-      <th>Mensagem</th>
+      <th>Mensagem</th>      
+      <th>CEP</th>
       <th>Opções</th>
       <tr>&nbsp;</th>
     </tr>
@@ -38,6 +39,7 @@ $sth->execute();
         <td><?php echo $row['nome']?></td>
         <td><?php echo $row['telefone']?></td>
         <td><?php echo $row['mensagem']?></td>
+        <td><?php echo $row['cep']?></td>
         <td>
           <a class="btn btn-danger" href="excluir.php?id=<?php
             echo $row['id'];?>">Excluir</a>
