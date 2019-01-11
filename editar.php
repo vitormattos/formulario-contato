@@ -6,12 +6,14 @@ if (!empty($_POST)) {
         '   SET nome = ?'.
         '   SET telefone = ?'.
         '   SET mensagem = ?'.
+        '   SET cep = ?'.
         ' WHERE id = ?'
     );
     $sth->execute([
         $_GET['nome'],
         $_GET['telefone'],
         $_GET['mensagem'],
+        $_GET['cep'],
         $_GET['id']
     ]);
     echo 'Dados editados com sucesso!';
