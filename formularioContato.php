@@ -13,6 +13,13 @@
             echo $row['nome'];
         }
     ?>" />
+  <label for="cep">CEP</label>
+  <input name="cep" id="cep" type="text"
+    value="<?php
+        if (!empty($row['cep'])) {
+            echo $row['cep'];
+        }
+    ?>" />
   <label for="telefone"
     value="<?php
         if (!empty($row['telefone'])) {
