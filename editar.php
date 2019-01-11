@@ -14,7 +14,7 @@ if (!empty($_POST)) {
         $_GET['mensagem'],
         $_GET['id']
     ]);
-    echo 'Dados editados com sucesso!';
+    echo 'Dados modificados com excelência de superioridade com sucesso!';
 }
 
 $pdo = new PDO('sqlite:contatos.sqlite3');
